@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <pdfbeautifier translate="label" module="pdfbeautifier">
+            <label>Pdf Beautifier</label>
+            <sort_order>200</sort_order>
+        </pdfbeautifier>
+    </tabs>
+    <sections>
+        <pdfbeautifier_config translate="label" module="pdfbeautifier">
+            <label>Configuration</label>
+            <tab>pdfbeautifier</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <frontend translate="label">
+                    <label>PdfBeautifier</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <color translate="label">
+                            <label>Html Color (e.g. #FF0000)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>For lines and grand total block in pdf file.</comment>
+                        </color>
+                        <font_regular translate="label">
+                            <label>Upload Font Regular</label>
+                            <upload_dir>media/pdfbeautifier/font</upload_dir>
+                            <frontend_type>file</frontend_type>
+                            <backend_model>pdfbeautifier/font</backend_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>*.ttf files only. Standard Font is OpenSans.</comment>
+                        </font_regular>
+                        <font_bold translate="label">
+                            <label>Upload Font Bold</label>
+                            <upload_dir>media/pdfbeautifier/font</upload_dir>
+                            <frontend_type>file</frontend_type>
+                            <backend_model>pdfbeautifier/font</backend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>*.ttf files only. Standard Font is OpenSans.</comment>
+                        </font_bold>
+                        <font_italic translate="label">
+                            <label>Upload Font Italic</label>
+                            <upload_dir>media/pdfbeautifier/font</upload_dir>
+                            <frontend_type>file</frontend_type>
+                            <backend_model>pdfbeautifier/font</backend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <comment>*.ttf files only. Standard Font is OpenSans.</comment>
+                        </font_italic>
+                    </fields>
+                </frontend>
+            </groups>
+        </pdfbeautifier_config>
+    </sections>
+</config>
+				
